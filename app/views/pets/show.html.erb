@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pet name:</strong>
+  <%= @pet.name %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @pet.picture %>
+</p>
+
+<p>
+  <strong>Max weight:</strong>
+  <%= @pet.max_weight %>
+</p>
+<p>
+  <strong>Pet age:</strong>
+  <%= @pet.age %>
+</p>
+
+
+<p>
+  <strong>Eaten foods:</strong>
+  <%= @pet.eaten_foods %>
+</p>
+
+
+<p>
+  <strong>Pet full score:</strong>
+  <%= @pet.food_score %>% full
+</p>
+
+<%= link_to 'Edit', edit_pet_path(@pet) %> |
+<%= link_to 'Back', pets_path %> |
+<% unless @pet.food_score >= 100 %>
+  <%= link_to 'Feed your pet', new_pet_food_path(@pet, @food) %>
+<% end %> |
+<%= link_to'Poop foods', pet_foods_path(@pet) %>

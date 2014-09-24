@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  picture: MyString
+  max_weight: 1
+  eat_score: 1
+
+two:
+  name: MyString
+  picture: MyString
+  max_weight: 1
+  eat_score: 1
